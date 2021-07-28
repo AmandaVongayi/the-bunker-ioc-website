@@ -4,24 +4,7 @@
     box-sizing: border-box;
 }
 
-/* temporary styles */
 
-*{
-    padding: 0.5rem;
-    border: 1px solid rgb(200, 200, 200)
-}
-
-html, 
-body{
-    border: none;
-}
-
-h1, h2, h3,h4,h5,h6,p,a{
-    border: 2px solid rgb(133, 102, 102)
-}
-
-
-/* End temp styles */
 
 
 /* ---------------------------- Std Utility Classes ----------------------------  */
@@ -44,7 +27,7 @@ h1, h2, h3,h4,h5,h6,p,a{
 
 .padded-tb  { padding-top: 5%; padding-bottom: 5%; }
 .padded-lr  { padding-left: 5%; padding-right: 5%; }
-
+.padded-lr-1  { padding-left: 1%; padding-right: 1%; }
 .padded-t-1 { padding-top: 1rem; }
 .padded-b-1 { padding-bottom: 1rem; }
 .padded-l-1 { padding-left: 1rem; }
@@ -84,6 +67,7 @@ h1, h2, h3,h4,h5,h6,p,a{
 
 .margin-tb { margin-top: 5%; margin-bottom: 5%; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }
+.margin-lr-2 { margin-left: 2%; margin-right: 2%; }
 
 /*------------- Typography Utility Classes -------------*/ 
 
@@ -141,25 +125,31 @@ body {
   h2, h3, h4, h5, h6 {
     line-height: 1.1;
     margin-bottom: 1.2rem;
+    text-transform: uppercase;
   }
   
   p {
     line-height: 1.4; 
     margin-bottom: 1rem;
-    font-weight:500; 
+    font-weight: 300; 
+    font-size: 1.1rem;
   }
 
   h1{
       font-size: 9rem;
       font-weight: 900;
-      text-transform: uppercase;
       line-height: 0.8;
   }
 
   h2{
+      font-size: 2.5rem;
+      font-weight: 900;
+   
+  }
+
+  h4{
       font-size: 2rem;
       font-weight: 900;
-      text-transform: uppercase;
   }
   
   h2:last-child, 
@@ -178,6 +168,11 @@ body {
     background-image: url('/images/the-bunker-5.jpg')
 }
 
+footer a{
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
 
 /* ---------------------------- Dark intro section ----------------------------  */
 
@@ -188,3 +183,44 @@ body {
 .bg-padded{
     padding-bottom: 30%;
 }
+
+.dark-padded-tb  { padding: 12% 7%; }
+
+/* ---------------------------- Opening Banner section ----------------------------  */
+
+.bg-banner-image{
+    background-image: url('/images/the-bunker-3.jpg');
+}
+
+/* ---------------------------- Grid section ----------------------------  */
+.bg-grid-image-1{
+    background-image: url('/images/the-bunker-4.jpg');
+}
+
+.bg-grid-image-2{
+    background-image: url('/images/the-bunker-2.jpg');
+}
+
+.bg-grid-image-3{
+    background-image: url('/images/the-bunker-7.jpg');
+}
+
+/* -------------------- SM Banner------------------ */
+
+.bg-sm-banner{
+    background-image: url('/images/the-bunker-5.jpg');
+    background-position: 50% 17%;
+}
+
+.fab{
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+/* -------------------- Map------------------ */
+
+.bg-map-banner{
+    background-image: url('/images/the-bunker-6.png');
+    
+}
+
